@@ -3,6 +3,11 @@ nav {
     color: white;
     background-color: gray;
 }
+.container-fluid {
+    white-space: nowrap;
+    float: left;
+    clear: both;
+}
 
 fieldset {
     border: none;
@@ -26,10 +31,17 @@ fieldset {
     margin-top: 10px;
 }
 
+.contianer-right {
+    float: right;
+    margin-top: 0;
+}
+
 .current-city {
     float: right;
     margin: 0;
     padding-right: 600px;
+    padding-top: 0%;
+    white-space: normal;
     clear: both;
 }
 
