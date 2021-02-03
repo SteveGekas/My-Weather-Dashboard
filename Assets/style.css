@@ -1,0 +1,48 @@
+nav {
+    text-align: center;
+    color: white;
+    background-color: gray;
+}
+
+fieldset {
+    border: none;
+}
+.text, .btn {
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+.text {
+    height: 40px;
+    width: 200px;
+    font-size: 22px;
+
+}
+
+.btn {
+    background-color: rgb(34, 86, 197);
+    height: 42px;
+    width: 45px;
+    margin-top: 10px;
+}
+
+.current-city {
+    float: right;
+    margin: 0;
+    padding-right: 600px;
+    clear: both;
+}
+
+.five-day {
+    float: right;
+    display: inline-flex;
+    padding-top: 25px;
+    padding-right: 300px;
+    clear: both;
+}
+
+
+
+
+
+
