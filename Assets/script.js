@@ -6,13 +6,31 @@ var uvIndex = "https://api.openweathermap.org/data/2.5/uvi?lat=";
 var fiveDay = "https://api.openweathermap.org/data/2.5/forecast?q=";
 var location = navigator.geolocation;
 var weatherIcon = "http://openweathermap.org/img/wn/";
-var searchcityArr = [];
+var searchedCityArr = [];
 
 $(document).ready(function () {
-    //gets the date for now (whenever you open the app)
-    var todayDate = moment().format("mm Do YYYY");
-    console.log(todayDate);
-    $(".current-city").append(todayDate);
+   
+
+    function searchForCity
+    $(".btn").on("click", function() {
+        searchCity = $(".text")
+
+        if (searchCity === "") {
+            return;
+        }
+        $(".text").val("");
+        cityWeather(searchCity);
+    });
+
+    function cityWeather(searchForCity) {
+        var cityWeatherURL = todayWeather + "q=" + searchForCity + units + key;
+
+        $ajax({
+        url: cityWeatherURL,
+        method: "GET"
+        })
+       
+    }
 
 
 
